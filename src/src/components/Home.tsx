@@ -35,32 +35,43 @@ const Home = () => {
             <div className="slogan-line">DAMN WELL</div>
           </div>
           <div className="center-strip-layout">
-            <div className="side-image left">
-              <img src="src/assets/myselfboss.jpg" alt="Boss Pullover" className="side-img" />
-            </div>
             <div className="vertical-ticker">
               <div className="ticker-content">
                 <span>DEVELOPER</span>
+                <span>DEVELOPER</span>
+                <span>DEVELOPER</span>
+                <span>DEVELOPER</span>
+                <span>DEVELOPER</span>
+                <span>DEVELOPER</span>
+                <span>DEVELOPER</span>
+                <span>DEVELOPER</span>
               </div>
             </div>
-            <div className="side-image right">
-              <img src="src/assets/motorrad.jpg" alt="Motorrad" className="side-img" />
+            <div className="images-stack">
+              <div className="image-box">
+                <img src="src/assets/myselfboss.jpg" alt="Boss Pullover" className="side-img" />
+                <p className="image-caption">Dev Confederation 2025</p>
+              </div>
+              <div className="image-box">
+                <img src="src/assets/motorrad.jpg" alt="Motorrad" className="side-img" />
+                <p className="image-caption">Motorcycle Riding</p>
+              </div>
             </div>
           </div>
           <div className="hero-content">
             <h1 className="hero-title">
-              <span className="name-lorena">Lorena</span> Jil Vennemann
+              <span className="name-lorena">Lorena</span> <span className="name-jil">Jil</span> Vennemann
             </h1>
 
             <p className="hero-subtitle">
-              4th-year Software Developer Apprentice @ SIX
+              4th-year Software <span className="red-text">Developer</span> Apprentice @ SIX
             </p>
 
             <div className="hero-tags">
-              <span className="tag">Backend</span>
-              <span className="tag">Frontend</span>
-              <span className="tag">Cloud Native</span>
-              <span className="tag">Git</span>
+              <span className="tag" style={{['--tag-index' as any]: 0}}>Backend</span>
+              <span className="tag" style={{['--tag-index' as any]: 1}}>Frontend</span>
+              <span className="tag" style={{['--tag-index' as any]: 2}}>Cloud Native</span>
+              <span className="tag" style={{['--tag-index' as any]: 3}}>Git</span>
             </div>
 
             <div className="hero-cta">

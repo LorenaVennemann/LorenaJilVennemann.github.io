@@ -1,7 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .vertical-ticker {
   width: 60px;
-  height: calc(100vh - 64px);
-  margin-top: 32px;
+  height: 850px;
+  margin-top: -100px;
   margin-bottom: 32px;
   background: #23272b;
   border: 2px solid #ede6d1;
@@ -15,14 +19,12 @@
 }
 .ticker-content {
   position: absolute;
-  bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  gap: 180px;
   font-family: 'Arial Black', sans-serif;
   font-size: 1.5rem;
   color: #ede6d1;
@@ -30,10 +32,15 @@
   padding: 0;
   writing-mode: vertical-rl;
   text-orientation: mixed;
+  animation: tickerScroll 10s linear infinite;
 }
 @keyframes tickerScroll {
-  0% { top: 100%; }
-  100% { top: -100%; }
+  0% { 
+    transform: translateY(200%); 
+  }
+  100% { 
+    transform: translateY(-200%); 
+  }
 }
 .horizontal-scroll {
   display: flex;
@@ -55,12 +62,13 @@
 
 .mega-slogan {
   margin-left: 360px;
-  height: 320px;
+  height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 0.5rem;
 }
 /* Layout für vertikalen Streifen und Bilder */
 .center-strip-layout {
@@ -68,10 +76,20 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 60px;
   width: 100vw;
   height: 60vh;
   margin-top: 2rem;
   position: relative;
+}
+
+.images-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  margin-top: -100px;
 }
 
 .side-image {
@@ -81,9 +99,59 @@
   justify-content: center;
   height: 100%;
 }
+
+.image-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  background: #edeadf;
+  border: 3px solid #23272b;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transform-style: preserve-3d;
+  height: 340px;
+  width: 220px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-box:hover {
+  transform: translateY(-20px) scale(1.05) rotate(2deg);
+  box-shadow: 0 20px 60px rgba(231, 76, 60, 0.2),
+              0 0 20px rgba(231, 76, 60, 0.15),
+              0 30px 80px rgba(0, 0, 0, 0.3);
+  border-color: #e74c3c;
+  background: #e74c3c;
+  animation: bounceHover 0.6s ease-in-out;
+}
+
+.image-box::before {
+  display: none;
+}
+
+@keyframes bounceHover {
+  0%, 100% { transform: translateY(-20px) scale(1.05) rotate(2deg); }
+  50% { transform: translateY(-25px) scale(1.08) rotate(-2deg); }
+}
+
+.image-caption {
+  color: #23272b;
+  font-family: 'Arial Black', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
 .side-img {
-  width: 200px;
-  height: 320px;
+  width: 180px;
+  height: 260px;
   border-radius: 18px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.18);
   object-fit: cover;
@@ -167,6 +235,25 @@
     8px 8px 0px rgba(26, 29, 40, 0.5);
 }
 
+.hero-title .name-lorena {
+  color: #e8dcc4;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.hero-title .name-jil {
+  color: #e74c3c;
+  text-shadow: 0 0 20px rgba(231, 76, 60, 0.5),
+               0 0 40px rgba(231, 76, 60, 0.3);
+}
+
 .hero-title::after {
   content: '';
   position: absolute;
@@ -224,6 +311,13 @@
   line-height: 1.6;
   position: relative;
   padding: 0 2rem;
+}
+
+.hero-subtitle .red-text {
+  color: #e74c3c;
+  font-weight: 700;
+  text-shadow: 0 0 15px rgba(231, 76, 60, 0.4),
+               0 0 30px rgba(231, 76, 60, 0.2);
 }
 
 .hero-subtitle::before,
@@ -343,13 +437,13 @@
 }
 
 .btn {
-  padding: 1.1rem 2.5rem;
+  padding: 1.3rem 3rem;
   text-decoration: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -357,21 +451,25 @@
   overflow: hidden;
   text-transform: uppercase;
   border: 3px solid transparent;
+  cursor: pointer;
 }
 
 .btn::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s ease;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
 }
 
 .btn:hover::before {
-  left: 100%;
+  width: 300px;
+  height: 300px;
 }
 
 .btn-primary {
@@ -379,14 +477,31 @@
   color: #2f3542;
   border: 3px solid #e8dcc4;
   font-weight: 800;
-  box-shadow: 0 4px 15px rgba(232, 220, 196, 0.3);
+  box-shadow: 0 6px 20px rgba(232, 220, 196, 0.4),
+              0 0 30px rgba(232, 220, 196, 0.2);
+  animation: pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 6px 20px rgba(232, 220, 196, 0.4),
+                0 0 30px rgba(232, 220, 196, 0.2);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 8px 35px rgba(232, 220, 196, 0.7),
+                0 0 50px rgba(232, 220, 196, 0.5);
+    transform: scale(1.02);
+  }
 }
 
 .btn-primary:hover {
   background: #f5f0e8;
   color: #2f3542;
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 10px 30px rgba(232, 220, 196, 0.5);
+  transform: translateY(-8px) scale(1.1) rotate(-2deg);
+  box-shadow: 0 15px 40px rgba(232, 220, 196, 0.6),
+              0 0 60px rgba(232, 220, 196, 0.4);
+  animation: none;
 }
 
 .btn-secondary {
@@ -394,13 +509,16 @@
   color: #e8dcc4;
   border: 3px solid #e8dcc4;
   font-weight: 800;
+  box-shadow: 0 0 20px rgba(232, 220, 196, 0.2);
 }
 
 .btn-secondary:hover {
-  background: #e8dcc4;
-  color: #2f3542;
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 10px 30px rgba(232, 220, 196, 0.5);
+  background: #e74c3c;
+  color: #fff;
+  border-color: #e74c3c;
+  transform: translateY(-8px) scale(1.1) rotate(2deg);
+  box-shadow: 0 15px 40px rgba(231, 76, 60, 0.5),
+              0 0 60px rgba(231, 76, 60, 0.3);
 }
 
 .mega-slogan {
@@ -410,24 +528,35 @@
 }
 .slogan-line {
   font-family: 'Impact', 'Arial Black', sans-serif;
-  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-size: clamp(3.5rem, 10vw, 7.5rem);
   font-weight: 900;
   color: #e8dcc4;
-  line-height: 1.05;
-  letter-spacing: 0.01em;
+  line-height: 0.95;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
-  transition: color 0.2s;
+  transition: all 0.3s ease;
   text-align: center;
+  padding: 0.1em 0;
+}
+
+.slogan-line:hover {
+  letter-spacing: 0.05em;
 }
 .slogan-line.accent {
   color: #e74c3c;
-  font-size: clamp(3.5rem, 12vw, 8rem);
-  margin: 0.2em 0;
-  transition: color 0.2s;
+  font-size: clamp(4rem, 14vw, 9rem);
+  margin: 0.1em 0;
+  transition: all 0.3s ease;
   cursor: pointer;
+  text-shadow: 0 0 15px rgba(231, 76, 60, 0.3),
+               0 0 30px rgba(231, 76, 60, 0.2);
 }
+
 .slogan-line.accent:hover {
-  color: #c0392b;
+  color: #ff5e4d;
+  transform: scale(1.08);
+  text-shadow: 0 0 25px rgba(231, 76, 60, 0.5),
+               0 0 50px rgba(231, 76, 60, 0.3);
 }
 /* --- End Mega Slogan Block --- */
 
