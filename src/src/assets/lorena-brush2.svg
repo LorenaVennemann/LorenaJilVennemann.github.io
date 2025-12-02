@@ -1,0 +1,6 @@
+<svg width="600" height="200" viewBox="0 0 600 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path id="lorena-path"
+    d="M 90 150 Q 120 80 170 150 Q 200 220 250 150 Q 280 80 330 150 Q 360 220 410 150 Q 440 80 490 150"
+    stroke="#23272b" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- This is a placeholder. For a real brush effect, use a path exported from 'Lorena' in Pacifico font. -->
+</svg>

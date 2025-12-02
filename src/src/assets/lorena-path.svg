@@ -1,0 +1,6 @@
+<!-- SVG 'Lorena' as path, generated for hand-drawn animation. This is an approximation of Pacifico font. -->
+<svg width="600" height="200" viewBox="0 0 600 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path id="lorena-path"
+    d="M 80 150 C 100 80 160 80 180 150 C 200 220 260 220 280 150 C 300 80 360 80 380 150 C 400 220 460 220 480 150"
+    stroke="#23272b" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

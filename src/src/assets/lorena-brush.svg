@@ -1,0 +1,5 @@
+<svg width="600" height="200" viewBox="0 0 600 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path id="lorena-path"
+    d="M60 150 Q80 80 120 120 Q140 160 180 120 Q200 80 240 120 Q260 160 300 120 Q320 80 360 120 Q380 160 420 120 Q440 80 480 120 Q500 160 540 120"
+    stroke="#23272b" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
