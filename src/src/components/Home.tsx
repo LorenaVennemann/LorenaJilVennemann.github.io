@@ -49,11 +49,11 @@ const Home = () => {
             </div>
             <div className="images-stack">
               <div className="image-box">
-                <img src="src/assets/myselfboss.jpg" alt="Boss Pullover" className="side-img" />
+                <img src="/src/assets/myselfboss.jpg" alt="Boss Pullover" className="side-img" />
                 <p className="image-caption">Dev Confederation 2025</p>
               </div>
               <div className="image-box">
-                <img src="src/assets/motorrad.jpg" alt="Motorrad" className="side-img" />
+                <img src="/src/assets/motorrad.jpg" alt="Motorrad" className="side-img" />
                 <p className="image-caption">Motorcycle Riding</p>
               </div>
             </div>

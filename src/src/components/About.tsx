@@ -47,25 +47,14 @@ const About = () => {
         <div className="hero-content">
           <h2 className="hero-title">CRAFTING <span className="slogan-line accent">SOFTWARE</span></h2>
           <p className="hero-subtitle">built with care — since 2022</p>
-          <div className="hero-tags">
-            <span className="tag">Java & Spring Boot</span>
-            <span className="tag">React & TypeScript</span>
-            <span className="tag">Cloud Native</span>
-            <span className="tag">DevOps</span>
-          </div>
         </div>
       </section>
+      
       <div className="page-header">
         <h1 className="page-title">Lorena Jil Vennemann</h1>
         <p className="page-subtitle">
-          Software Developer Apprentice specializing in Backend Development & Cloud-Native Technologies
+          Software Developer Apprentice @ SIX
         </p>
-        <div className="hero-tags">
-          <span className="tag">Java & Spring Boot</span>
-          <span className="tag">React & TypeScript</span>
-          <span className="tag">Cloud Native</span>
-          <span className="tag">DevOps</span>
-        </div>
       </div>
 
       <section ref={initialRef as any} className="initial-section">
@@ -77,84 +66,81 @@ const About = () => {
 
       <section>
         <div className="card">
-          <h3>Professional Background</h3>
+          <h3>About Me</h3>
           <p>
-            I am currently in my 4th year as a Software Developer Apprentice at SIX, where I focus on 
-            building robust backend systems and modern cloud-native applications. My technical expertise 
-            centers around <strong>Java</strong> and <strong>React</strong>, with a strong emphasis on 
-            scalable architecture and performance optimization.
+            4th-year Software Developer Apprentice at <strong>SIX</strong>, specializing in backend systems and cloud-native applications. 
+            Strong focus on <strong>Java</strong>, <strong>React</strong>, and scalable architecture.
           </p>
           <p style={{ marginTop: '1rem' }}>
-            During my apprenticeship, I gained valuable international experience working at <strong>Archr</strong> in Stockholm for one month. This opportunity provided me with insights into professional software development practices in an international setting and enhanced my ability to collaborate across diverse teams.
+            International experience at <strong>Archr</strong> in Stockholm, working in a fast-paced startup environment.
           </p>
         </div>
       </section>
 
       <section style={{ marginBottom: '3rem' }}>
-        <h2 className="section-title">Professional Journey</h2>
+        <h2 className="section-title">Journey</h2>
         <div className="card">
           <div className="timeline">
             <div className="timeline-item">
-              <div className="timeline-year">2025 – Present</div>
-              <div className="timeline-content">4th Year Software Developer Apprentice at SIX – Focus on advanced backend development and final project (IPA) preparation</div>
+              <div className="timeline-year">2025</div>
+              <div className="timeline-content">4th Year @ SIX · IPA Preparation · Advanced Backend Development</div>
             </div>
             <div className="timeline-item">
               <div className="timeline-year">2025</div>
-              <div className="timeline-content">Worked at a startup in Stockholm – Gained hands-on experience in a fast-paced international tech environment</div>
+              <div className="timeline-content">Archr Stockholm · International Startup Experience</div>
             </div>
             <div className="timeline-item">
-              <div className="timeline-year">2022 – Present</div>
-              <div className="timeline-content">Software Developer Apprenticeship at SIX – Started the apprenticeship and built a strong foundation in software development</div>
+              <div className="timeline-year">2022</div>
+              <div className="timeline-content">Started Apprenticeship @ SIX · Software Developer EFZ</div>
             </div>
           </div>
         </div>
       </section>
 
       <div className="two-column">
-        <div className="card">
-          <h3>Development Philosophy</h3>
-          <p>
-            I am passionate about creating applications that are scalable, reliable, and maintainable. My approach emphasizes clean code, thorough testing, and continuous learning. I particularly enjoy API development, performance optimization, and exploring emerging technologies that can enhance software quality.
-          </p>
-        </div>
         <div className="card interests-card">
-          <h3>Personal Interests</h3>
+          <h3>Interests</h3>
           <ul className="interests-list">
-            <li><span className="interest-icon">🏍️</span> Motorcycle riding and maintenance</li>
-            <li><span className="interest-icon">🥋</span> Martial arts and fitness training</li>
-            <li><span className="interest-icon">🎵</span> Music appreciation</li>
+            <li><span className="interest-icon">🏍️</span> Motorcycles</li>
+            <li><span className="interest-icon">🥋</span> Martial Arts</li>
+            <li><span className="interest-icon">🎵</span> Music</li>
+            <li><span className="interest-icon">💪</span> Fitness</li>
           </ul>
-          <p style={{ marginTop: '1rem', fontSize: '0.9rem' }}>
-            Outside of software development, I maintain an active lifestyle through martial arts and regular gym training, which helps me stay focused and disciplined in both personal and professional pursuits.
+        </div>
+        <div className="card">
+          <h3>Philosophy</h3>
+          <p>
+            Clean code. Thorough testing. Continuous learning. 
+            Building scalable, reliable applications that work damn well.
           </p>
         </div>
       </div>
 
       <section className="skills-section">
-        <h2 className="section-title">Technical Skills</h2>
+        <h2 className="section-title">Tech Stack</h2>
         <div className="skills-grid">
           <div className="card skill-card">
-            <h3>Backend Development</h3>
+            <h3>Backend</h3>
             <ul>
-              <li><strong>Java</strong> – Spring Boot, REST APIs, Microservices Architecture</li>
-              <li><strong>SQL</strong> – Database Design, HeidiSQL, MySQL</li>
-              <li><strong>C++</strong> – Fundamentals & Performance Optimization</li>
+              <li><strong>Java</strong> · Spring Boot · REST APIs</li>
+              <li><strong>SQL</strong> · MySQL · Database Design</li>
+              <li><strong>C++</strong> · Performance Optimization</li>
             </ul>
           </div>
           <div className="card skill-card">
-            <h3>Frontend Development</h3>
+            <h3>Frontend</h3>
             <ul>
-              <li><strong>React</strong> – Hooks, Context API, State Management</li>
-              <li><strong>TypeScript / JavaScript</strong> – ES6+, Async Patterns</li>
-              <li><strong>HTML/CSS</strong> – Responsive Design, Modern Layouts</li>
+              <li><strong>React</strong> · TypeScript · Hooks</li>
+              <li><strong>JavaScript</strong> · ES6+ · Async</li>
+              <li><strong>CSS</strong> · Responsive Design</li>
             </ul>
           </div>
           <div className="card skill-card">
             <h3>Cloud & DevOps</h3>
             <ul>
-              <li><strong>OpenShift</strong> – Container Platform & Deployments</li>
-              <li><strong>Kubernetes</strong> – Orchestration & Service Management</li>
-              <li><strong>Docker & Podman</strong> – Containerization</li>
+              <li><strong>OpenShift</strong> · Kubernetes</li>
+              <li><strong>Docker</strong> · Podman</li>
+              <li><strong>CI/CD</strong> · Deployments</li>
             </ul>
           </div>
         </div>
@@ -163,12 +149,10 @@ const About = () => {
       <section>
         <h2 className="section-title">Current Focus</h2>
         <div className="card focus-card">
-          <h3>IPA Preparation & Professional Development</h3>
+          <h3>IPA 2025</h3>
           <p>
-            I am currently preparing for my IPA (Individual Practical Assignment) as part of the Swiss Software Developer EFZ qualification. This intensive phase involves working extensively with <strong>TypeScript</strong> and <strong>Java</strong> on real-world applications, further developing my expertise in enterprise-grade software development.
-          </p>
-          <p style={{ marginTop: '1rem' }}>
-            My goal is to continue advancing my skills in backend architecture, cloud-native technologies, and DevOps practices, positioning myself as a well-rounded software engineer capable of delivering high-quality, production-ready solutions.
+            Preparing for my final IPA project with <strong>TypeScript</strong> and <strong>Java</strong>. 
+            Focus on enterprise-grade software, cloud-native architecture, and DevOps best practices.
           </p>
         </div>
       </section>
