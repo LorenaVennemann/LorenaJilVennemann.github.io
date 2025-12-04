@@ -1058,6 +1058,76 @@ body {
 /* --- End Navbar Red Hover --- */
 
 @media (max-width: 768px) {
+  /* Switch to vertical scroll on mobile */
+  .stiff-home {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+  }
+
+  .stiff-section {
+    min-width: 100vw;
+    max-width: 100vw;
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 6rem 1rem 2rem;
+  }
+
+  .main-hero-section {
+    flex-direction: column;
+    padding: 6rem 1rem 2rem;
+    gap: 2rem;
+  }
+
+  .hero-headline {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .vertical-ticker {
+    display: none;
+  }
+
+  .hero-projects {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .hero-projects .stiff-project-card {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .work-section {
+    padding: 3rem 1rem;
+  }
+
+  .projects-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .stiff-project-card {
+    padding: 1.5rem;
+    border: 6px solid #23272b;
+  }
+
+  .image-container {
+    height: 300px;
+  }
+
+  .stiff-project-card img {
+    height: 600px;
+  }
+
+  .stiff-big-headline {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+    margin-bottom: 1.5rem;
+  }
+
   .hero-section {
     padding: 8rem 1rem 3rem;
     min-height: 100vh;
@@ -1108,7 +1178,7 @@ body {
 
 @media (max-width: 480px) {
   .hero-section {
-    padding: 7rem 0.75rem 2rem;
+    padding: 5rem 0.75rem 2rem;
   }
 
   .terminal-line {
@@ -1133,5 +1203,31 @@ body {
     padding: 0.7rem 1.2rem;
     font-size: 0.8rem;
   }
+
+  .stiff-big-headline {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .image-container {
+    height: 250px;
+  }
+
+  .stiff-project-card img {
+    height: 500px;
+  }
+
+  .stiff-project-card {
+    padding: 1rem;
+    border: 4px solid #23272b;
+  }
+
+  .work-section {
+    padding: 2rem 0.5rem;
+  }
+
+  .projects-row {
+    gap: 1.5rem;
+  }
 }
+
 
