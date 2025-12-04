@@ -9,7 +9,6 @@ const Home = () => {
   const projectsRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const [verticalScroll, setVerticalScroll] = useState(0);
-  const [isInProjectZone, setIsInProjectZone] = useState(false);
   const [showAboutSection, setShowAboutSection] = useState(false);
 
   useEffect(() => {

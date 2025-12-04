@@ -1,5 +1,5 @@
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import './SplashScreen.css';
 
 interface SplashScreenProps {
@@ -7,7 +7,7 @@ interface SplashScreenProps {
 }
 
 const SplashScreen: React.FC<SplashScreenProps> = ({ onFinish }) => {
-  const svgRef = useRef<SVGSVGElement>(null);
+
 
   useEffect(() => {
     // Fade out splash after 2.2s
