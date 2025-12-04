@@ -51,10 +51,17 @@ const About = () => {
       </section>
       
       <div className="page-header">
-        <h1 className="page-title">Lorena Jil Vennemann</h1>
+        <h1 className="page-title">Lorena</h1>
+        <p className="page-name">Lorena Jil Vennemann</p>
         <p className="page-subtitle">
           Software Developer Apprentice @ SIX
         </p>
+        <div className="hero-tags">
+          <span className="tag">Java</span>
+          <span className="tag">React</span>
+          <span className="tag">TypeScript</span>
+          <span className="tag">Cloud Native</span>
+        </div>
       </div>
 
       <section ref={initialRef as any} className="initial-section">
