@@ -58,10 +58,10 @@ const Contact = () => {
           <h2 style={{ fontSize: '2rem', marginBottom: '2rem' }}>Follow Me</h2>
           <div className="social-links">
             <a href="https://github.com/LorenaVennemann" target="_blank" rel="noopener noreferrer" className="social-link" title="GitHub">
-              <img src="/src/assets/github.png" alt="Github" />
+              <img src="/github.png" alt="Github" />
             </a>
             <a href="https://www.linkedin.com/in/lorena-jil-vennemann-344b71289/" target="_blank" rel="noopener noreferrer" className="social-link" title="LinkedIn">
-              <img src="/src/assets/linkdin.png" alt="LinkedIn" />
+              <img src="/linkdin.png" alt="LinkedIn" />
             </a>
           </div>
         </div>

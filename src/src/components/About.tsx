@@ -35,7 +35,7 @@ const About = () => {
         <div className="profile-layout">
           <div className="profile-image-side">
             <img 
-              src="/src/assets/myself.jpg" 
+              src="/myself.jpg" 
               alt="Lorena Jil Vennemann" 
               className="profile-image-large"
             />

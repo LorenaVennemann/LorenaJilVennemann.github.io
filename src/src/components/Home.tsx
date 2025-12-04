@@ -102,7 +102,7 @@ const Home = () => {
             <div className="hero-projects" ref={projectsRef} style={{ transform: `translateY(-${verticalScroll}px)` }}>
               <div className="stiff-project-card">
                 <div className="image-container">
-                  <img src="/src/assets/myselfboss.jpg" alt="Dev Conference" style={{ objectPosition: 'center 55%' }} />
+                  <img src="/myselfboss.jpg" alt="Dev Conference" style={{ objectPosition: 'center 55%' }} />
                 </div>
                 <div className="project-info">
                   <p className="project-company">SWISS DEV</p>
@@ -111,7 +111,7 @@ const Home = () => {
               </div>
               <div className="stiff-project-card">
                 <div className="image-container">
-                  <img src="/src/assets/motorrad.jpg" alt="Motorcycle" style={{ objectPosition: 'center 80%' }} />
+                  <img src="/motorrad.jpg" alt="Motorcycle" style={{ objectPosition: 'center 80%' }} />
                 </div>
                 <div className="project-info">
                   <p className="project-company">PERSONAL</p>
